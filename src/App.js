@@ -5,7 +5,7 @@ import moment from 'moment';
 import logo from './logo.svg';
 import './App.css';
 import TestTab from './components/TestTab'
-import MainTab from './MainTab';
+import MainTab from './components/MainTab';
 
 
 const App = () => (
@@ -15,7 +15,7 @@ const App = () => (
          <div className="App-header">
            <p>CS VM Manager</p>
          </div>
-          <TestTab
+          <MainTab
           />
  </div>
 
