@@ -13,7 +13,7 @@ const App = () => (
 
   <div className="App">
          <div className="App-header">
-           <p>CS VM Manager</p>
+           <p>Info Kiosk</p>
          </div>
           <MainTab
           />

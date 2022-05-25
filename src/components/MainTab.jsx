@@ -51,17 +51,40 @@ const MainTab = () => {
      }
 
     return (
-        <React.Fragment>
+      <React.Fragment>
+        
+
          <div className="ui attached tabular menu">
          <Tab 
           panes={panes} 
           onTabChange={handleChange} 
          />
+        <Table class="ui table striped">
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell class="six wide">Map</Table.HeaderCell>
+              <Table.HeaderCell class="two wide">Info</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>
+              <Segment tertiary>
+                <div>
+                <div>
+                  <pre>{JSON.stringify(state,null,2)}</pre>
+                  <pre>{state["activeIndex"]}</pre>
+                </div>
+                </div>
+              </Segment>
+              </Table.Cell>
+              <Table.Cell>
+                <h1>sdfgsfdgsdfgdsfgdsfgdsfgdsfgs</h1>
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
         
-        <Segment tertiary>
-          <pre>{JSON.stringify(state,null,2)}</pre>
-          <pre>{state["activeIndex"]}</pre>
-        </Segment>
         </div>
         </React.Fragment>
     
